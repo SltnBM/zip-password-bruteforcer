@@ -60,10 +60,5 @@ Do not use it on files you do not own or have permission to test.
 ## Contributing
 Feel free to open issues or submit pull requests for improvements or bug fixes.
 
-## Contact
-If you have questions or feedback, feel free to reach out:
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sultan%20Badra-blue?logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/in/sultan-badra) [![Medium](https://img.shields.io/badge/Medium-@SltnBM-black?logo=medium&logoColor=white&style=flat-square)](https://medium.com/@SltnBM)
-
 ## License
 This project is open-source and free to use.
