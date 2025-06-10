@@ -1,6 +1,7 @@
 import zipfile
+import argparse
 
-def brute_force_zip(zip_file_path, wordlist_path):
+def brute_force(zip_file_path, wordlist_path):
     try:
         with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
             with open(wordlist_path, 'r') as wordlist:
@@ -19,6 +20,15 @@ def brute_force_zip(zip_file_path, wordlist_path):
         return None
 
 if __name__ == "__main__":
-    zip_path = input("Enter the path to the ZIP file: ")
-    wordlist_path = input("Enter the path to the wordlist: ")
-    brute_force_zip(zip_path, wordlist_path)
+    parser = argparse.ArgumentParser(description="ZIP Password Brute Forcer")
+    parser.add_argument("zip_path", nargs='?', help="Path to the ZIP file")
+    parser.add_argument("wordlist_path", nargs='?', help="Path to the wordlist file")
+
+    args = parser.parse_args()
+
+    if args.zip_path and args.wordlist_path:
+        brute_force(args.zip_path, args.wordlist_path)
+    else:
+        zip_path = input("Enter the path to the ZIP file: ")
+        wordlist_path = input("Enter the path to the wordlist: ")
+        brute_force(zip_path, wordlist_path)
