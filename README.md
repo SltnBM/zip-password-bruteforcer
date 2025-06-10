@@ -49,7 +49,10 @@ Enter the path to the ZIP file: protected.zip
 Enter the path to the wordlist: wordlist.txt
 [-] Incorrect: 1234
 [-] Incorrect: admin
+[-] Incorrect: password
 [+] Password found: secret
 ```
 
-
+## Disclaimer
+This tool is for educational and authorized testing purposes only.
+Do not use it on files you do not own or have permission to test.
