@@ -12,7 +12,7 @@ A simple Python script to brute-force password-protected ZIP files using a wordl
 2. No external libraries required
 
 ## 🚀 How to Use
-1. Make sure you have Python installed (Python 3.6 or higher recommended). Download it from python.org.
+1. Make sure you have Python installed (Python 3.6 or higher recommended). Download it from [python.org](https://www.python.org/downloads/).
 2. 📥 Clone the repository.
 ```bash
 git clone https://github.com/username/zip-password-bruteforcer.git
