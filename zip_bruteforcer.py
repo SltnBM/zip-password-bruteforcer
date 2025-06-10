@@ -2,6 +2,9 @@ import zipfile
 import argparse
 
 def brute_force(zip_file_path, wordlist_path):
+    if not zipfile.is_zipfile(zip_file_path):
+        print("[-] The provided file is not a valid ZIP archive.")
+        return None
     try:
         with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
             with open(wordlist_path, 'r') as wordlist:
@@ -11,7 +14,7 @@ def brute_force(zip_file_path, wordlist_path):
                         zip_ref.extractall(pwd=password.encode())
                         print(f"[+] Password found: {password}")
                         return password
-                    except:
+                    except RuntimeError:
                         print(f"[-] Incorrect: {password}")
         print("[-] Password not found in the wordlist.")
         return None
