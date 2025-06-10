@@ -59,3 +59,6 @@ Do not use it on files you do not own or have permission to test.
 
 ## Contributing
 Feel free to open issues or submit pull requests for improvements or bug fixes.
+
+## License
+This project is open-source and free to use.
