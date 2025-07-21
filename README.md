@@ -59,4 +59,4 @@ Do not use it on files you do not own or have permission to test.
 Feel free to open issues or submit pull requests for improvements or bug fixes.
 
 ## 📜 License
-This project is open-source and free to use.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
